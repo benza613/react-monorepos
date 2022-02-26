@@ -15,3 +15,4 @@ Recommended to use WSL w/ new windows terminal for windows development - much ea
     ]
     ```
 5. yarn install && lerna bootstrap
+6. npm i sass react-bootstrap bootstrap axios
