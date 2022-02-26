@@ -2,9 +2,22 @@
 import React, { Component, useState, useEffect } from "react";
 import axios, { AxiosRequestConfig } from "axios";
 
+import Q from "../../business/utils/api";
+
 const Layout = () => {
   useEffect(() => {
-    
+    var config: AxiosRequestConfig = {
+      baseURL: "https://accounts.spotify.com",
+      url: "/authorize",
+    };
+
+    Q(config)
+      .then((response) => {
+        console.log(JSON.stringify(response.data));
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }, []);
 
   return (
