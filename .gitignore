@@ -91,3 +91,6 @@ lerna-debug.log
 Thumbs.db
 
 .vs/
+
+packages/*/dist
+packages/*/build

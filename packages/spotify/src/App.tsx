@@ -1,14 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.scss';
-import Layout from './containers/shared/layout';
+import React from "react";
+import Layout from "./containers/shared/layout";
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <Layout></Layout>
-    </div>
+    <>
+      <Layout />
+    </>
   );
-}
+};
 
 export default App;
